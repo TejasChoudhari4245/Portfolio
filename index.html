@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><\>TEJAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">  <!-- Changed to data-bs-toggle -->
+                            Services
+                        </a>
+                        <!-- In your navbar, update the dropdown items -->
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+
+                            <a class="dropdown-item" href="it-services.html">IT SERVICES</a>
+                            <a class="dropdown-item" href="life-insurance.html">SBI LIFE INSURANCE</a>
+                        </div>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--hero section  -->
+    <div class="hero">
+        <div class="hero-text">
+            <h6 class="name"><span></span ><\></span>Web Developer</h6>
+            <h1 class="hero-title">Hello, my name is Tejas Choudhari</h1>
+            <p class="hero-description">A web developer who crafts fast, responsive websites with clean code. Passionate about problem-solving and creating seamless digital experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects"><button class="btn bg-dark text-light">Projects</button></a>
+                <a href="https://www.linkedin.com/in/228a272b3" target="_blank"><button  class="btn btn-outline-light">LinkedIn</button></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="tejas7.jpeg" alt="Profile Image" class="profile-img">
+        </div>
+    </div>
+
+    <!-- about section -->
+
+    <div class="about">
+        <section id="about" class="py-5 bg-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Text Column - Order changes on mobile -->
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <h2 class="fw-bold mb-3 text-light">About me</h2>
+                        <p class="mb-4 text-light">"I am Tejas Shivaji Choudhari, a passionate web developer skilled in HTML, CSS, JavaScript, Bootstrap, Django, and Python. With a strong foundation in both front-end and back-end technologies, I have built various projects, including an eCommerce website, portfolio, and an Amazon clone. My expertise extends to databases like SQL and MongoDB, as well as data analysis using Pandas, Matplotlib, and Power BI. I am eager to apply my skills to create efficient and user-friendly digital solutions."</p>
+                         <div class="resume-section mt-4">
+  <!-- Resume Dropdown Button -->
+  <div class="dropdown">
+    <button class="btn btn-warning dropdown-toggle" type="button" id="resumeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-file-earmark-pdf me-2"></i> Download Resume
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="resumeDropdown">
+      <li>
+        <a class="dropdown-item" href="Tejas Choudhari Data Anlayts Resume.pdf" download="Tejas-Choudhari-Data-Analyst-Resume.pdf">
+            <i class="bi bi-graph-up me-2"></i> Data Analyst Version
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="Tejas Choudhari Full Stack Resume.pdf" download="Tejas-Choudhari-Full-Stack-Resume.pdf">
+          <i class="bi bi-code-square me-2"></i> Full Stack Version
+        </a>
+      </li>
+    </ul>
+  </div>
+  <small class="d-block mt-2 text-light">PDF Format</small>
+</div>
+                    </div>
+                    
+                    <!-- Image Column - Order changes on mobile -->
+                    <div class="col-lg-6 order-lg-2 order-1 text-center mb-4 mb-lg-0">
+                        <div class="position-relative d-inline-block">
+                            <div class="rounded-circle bg-warning about-circle"></div>
+                            <img src="tejas4.jpeg" alt="Profile" class="img-fluid rounded-circle position-relative about-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="main">
+        <section id="projects" class="container py-4">
+            <h2 class="text-center fw-bold mb-4 text-dark">Projects</h2>
+            
+            <!-- Project 1 -->
+            <div class="row mb-4 project-card g-0">
+                <div class="col-md-6 d-flex align-items-center p-3">
+                    <div class="project-content">
+                        <h4 class="fw-bold text-light">Grocery Website</h4>
+                        <p class="text-light">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                        <a href="#"><button class="btn btn-outline-light btn-sm">View Project</button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 project-image-container p-0">
+                    <img src="project4.jpg" class="project-image w-100 h-100" alt="Project Image">
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="row mb-4 project-card g-0">
+                <div class="col-md-6 d-flex align-items-center p-3">
+                    <div class="project-content">
+                        <h4 class="fw-bold text-light">Dairy website</h4>
+                        <p class="text-light">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                        <a href="#"><button class="btn btn-outline-light btn-sm">View Project</button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 project-image-container p-0">
+                    <img src="project2.jpg" class="project-image w-100 h-100" alt="Project Image">
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="row mb-4 project-card g-0">
+                <div class="col-md-6 d-flex align-items-center p-3">
+                    <div class="project-content">
+                        <h4 class="fw-bold text-light">Price Prediction ML</h4>
+                        <p class="text-light">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+                        <a href="#"><button class="btn btn-outline-light btn-sm">View Project</button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 project-image-container p-0">
+                    <img src="project3.jpg" class="project-image w-100 h-100" alt="Project Image">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- contact section  -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <h2 class="text-light">Get In Touch</h2>
+          <p class="contact-subtitle text-light">Feel free to reach out for collaborations or just a friendly hello</p>
+          <div class="contact">
+          <div class="contact-methods">
+            <!-- Email Form -->
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xpwplvkg" method="POST">
+              <div class="form-group">
+                <input type="text" name="name" id="name" required>
+                <label for="name" class="text-light">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="email" required>
+                <label for="email" class="text-light">Your Email</label>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" rows="5" required></textarea>
+                <label for="message" class="text-light">Your Message</label>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <!-- Alternative Contact Methods -->
+            <div class="direct-contact">
+              <div class="contact-option">
+                <i class="fas fa-envelope text-light"></i>
+                <div>
+                  <h3 class="text-light">Email Me</h3>
+                  <a href="mailto:your.tejaschoudhari4245@gmail.com" class="text-light">your.tejaschoudhari4245@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-option">
+                <i class="fas fa-phone text-light"></i>
+                <div>
+                  <h3 class="text-light">Call Me</h3>
+                  <a href="tel:+91 8605434245" class="text-light">+91 8605434245</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+    <!-- Social Links -->
+<div class="d-flex justify-content-center mt-4">
+    <div class="text-center">
+        <a href="https://www.instagram.com/_tejas_chaudhari_4245_/" target="_blank" class="me-3 social-icon"><i class="bi bi-instagram fs-3 text-light"></i></a>
+        <a href="https://www.linkedin.com/in/228a272b3" target="_blank" class="me-3 social-icon"><i class="bi bi-linkedin fs-3 text-light"></i></a>
+        <a href="https://github.com/" target="_blank" class="me-3 social-icon"><i class="bi bi-github fs-3 text-light"></i></a>
+        <a href="#direct-contact" class="social-icon"><i class="bi bi-envelope fs-3 text-light"></i></a><br>
+        
+        <!-- Footer Text -->
+        <p class="text-center mt-3 text-light">Tejas Choudhari 2025</p>
+    </div>
+</div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
