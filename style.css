@@ -247,82 +247,77 @@ body {
     }
 }
 
-/* About Section */
+/* About Section - Clean Version without Circle */
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 20px;
+    padding: 2rem 1rem;
     background: #1e1e1e;
     max-width: 1400px;
-    height: 600px;
-    margin: 30px auto;
+    margin: 2rem auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #about {
-    padding: 2rem 0;
+    padding: 0;
     background: #1e1e1e !important;
 }
 
-.about-circle {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Image Container - Simplified */
+.about-image-container {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
 }
 
 .about-image {
-    width: 250px;
-    max-width: 100%;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.social-icon {
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: #e0e0e0;
+/* Text Content */
+.about h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: 1.25rem;
+    font-weight: 700;
 }
 
-.social-icon:hover {
-    transform: translateY(-3px);
-    color: #ff8000;
+.about p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 
-/* Resume Section */
-.resume-section {
-    text-align: center;
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .about {
+        padding: 3rem 2rem;
+    }
+    .about-image-container {
+        max-width: 300px;
+    }
 }
 
-.dropdown-menu {
-    border: 1px solid rgba(255,255,255,.1);
-    background-color: #2a2a2a;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+@media (min-width: 992px) {
+    .about-image-container {
+        max-width: 350px;
+    }
 }
 
-.dropdown-item {
-    transition: all 0.2s ease;
-    padding: 0.5rem 1rem;
-    color: #e0e0e0;
+@media (max-width: 767px) {
+    .about h2,
+    .about p {
+        text-align: center;
+    }
+    .resume-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-.dropdown-item:hover {
-    background-color: #ff8000;
-    color: #121212;
-}
-
-.btn-warning {
-    padding: 0.5rem 1.5rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn-warning:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
 /* Projects Section */
 .main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -635,19 +630,6 @@ body {
         height: 200px;
     }
     
-    .about-circle,
-    .about-image {
-        width: 180px;
-        height: 180px;
-    }
-    
-    h2 {
-        font-size: 1.75rem;
-    }
-    
-    p {
-        font-size: 0.9rem;
-    }
    /* Social Icons Hover Effects */
 .social-icon {
     display: inline-block;
