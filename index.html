@@ -24,18 +24,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
-                           data-bs-toggle="dropdown" aria-expanded="false">  <!-- Changed to data-bs-toggle -->
-                            Services
-                        </a>
-                        <!-- In your navbar, update the dropdown items -->
-                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-
-                            <a class="dropdown-item" href="it-services.html">IT SERVICES</a>
-                            
-                        </div>
-                        
+                    <li class="nav-item">
+                        <a class="nav-link" href="it-services.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -66,50 +56,173 @@
         </div>
     </div>
 
-    <!-- about section -->
-
-    <div class="about">
-        <section id="about" class="py-5 bg-dark">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Text Column - Order changes on mobile -->
-                    <div class="col-lg-6 order-lg-1 order-2">
-                        <h2 class="fw-bold mb-3 text-light">About me</h2>
-                        <p class="mb-4 text-light">"I am Tejas Shivaji Choudhari, a passionate web developer skilled in HTML, CSS, JavaScript, Bootstrap, Django, and Python. With a strong foundation in both front-end and back-end technologies, I have built various projects, including an eCommerce website, portfolio, and an Amazon clone. My expertise extends to databases like SQL and MongoDB, as well as data analysis using Pandas, Matplotlib, and Power BI. I am eager to apply my skills to create efficient and user-friendly digital solutions."</p>
-                         <div class="resume-section mt-4">
-  <!-- Resume Dropdown Button -->
-  <div class="dropdown">
-    <button class="btn btn-warning dropdown-toggle" type="button" id="resumeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-file-earmark-pdf me-2"></i> Download Resume
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="resumeDropdown">
-      <li>
-        <a class="dropdown-item" href="Tejas-Chaudhari-Business-Analyst-Resume.pdf" download="Tejas-Choudhari-Business-Analytics-Resume.pdf">
-            <i class="bi bi-graph-up me-2"></i> Business Analyst Version
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="Tejas Choudhari Full Stack Resume.pdf" download="Tejas-Choudhari-Full-Stack-Resume.pdf">
-          <i class="bi bi-code-square me-2"></i> Full Stack Version
-        </a>
-      </li>
-    </ul>
-  </div>
-  <small class="d-block mt-2 text-light">PDF Format</small>
-</div>
-                    </div>
+    <!-- About Section - Updated with Latest Technologies -->
+<div class="about">
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Text Column - Full width since no image -->
+                <div class="col-lg-10 text-center">
+                    <!-- Section Title with Animation -->
+                    <h2 class="fw-bold mb-4">
+                        <span class="section-title">About Me</span>
+                    </h2>
                     
-                    <!-- Image Column - Order changes on mobile -->
-                    <div class="col-lg-6 order-lg-2 order-1 text-center mb-4 mb-lg-0">
-                        <div class="position-relative d-inline-block">
-                            <div class="rounded-circle bg-warning about-circle"></div>
-                            <img src="tejas4.jpeg" alt="Profile" class="img-fluid rounded-circle position-relative about-image">
+                    <!-- Professional Introduction -->
+                    <div class="about-content">
+                        <p class="lead mb-4 text-light">
+                            👋 Hi, I'm <span class="text-warning fw-bold">Tejas Shivaji Choudhari</span>, a passionate 
+                            <span class="text-warning fw-bold">Full Stack Developer</span> and 
+                            <span class="text-warning fw-bold">Data Enthusiast</span>
+                        </p>
+                        
+                        <!-- Main Description with Icons -->
+                        <div class="about-text mb-5">
+                            <p class="mb-4 text-light">
+                                <i class="bi bi-code-slash me-2 text-warning"></i>
+                                I specialize in building modern, responsive web applications using cutting-edge technologies. 
+                                With expertise in both front-end and back-end development, I create seamless digital experiences 
+                                that are fast, secure, and user-friendly.
+                            </p>
+                            
+                            <p class="mb-4 text-light">
+                                <i class="bi bi-cpu me-2 text-warning"></i>
+                                My journey in tech has equipped me with a diverse skill set including 
+                                <span class="text-warning">React.js, Python, Django, and Machine Learning</span>. 
+                                I'm passionate about solving complex problems and continuously learning new technologies 
+                                to stay at the forefront of web development.
+                            </p>
+                        </div>
+                        
+                        <!-- Tech Stack Showcase -->
+                        <div class="tech-showcase mb-5">
+                            <h4 class="text-warning mb-4">⚡ My Tech Arsenal</h4>
+                            
+                            <!-- Frontend Technologies -->
+                            <div class="tech-category mb-4">
+                                <h5 class="text-light mb-3">
+                                    <i class="bi bi-display me-2 text-warning"></i>Frontend Development
+                                </h5>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">Bootstrap</span>
+                                    <span class="tech-badge">React.js</span>
+                                    <span class="tech-badge">Responsive Design</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Backend Technologies -->
+                            <div class="tech-category mb-4">
+                                <h5 class="text-light mb-3">
+                                    <i class="bi bi-hdd-stack me-2 text-warning"></i>Backend Development
+                                </h5>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Django</span>
+                                    <span class="tech-badge">REST APIs</span>
+                                    <span class="tech-badge">Gunicorn</span>
+                                    <span class="tech-badge">Nginx</span>
+                                    <span class="tech-badge">Node.js</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Databases & DevOps -->
+                            <div class="tech-category mb-4">
+                                <h5 class="text-light mb-3">
+                                    <i class="bi bi-database me-2 text-warning"></i>Databases & DevOps
+                                </h5>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">SQL</span>
+                                    <span class="tech-badge">MongoDB</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                    <span class="tech-badge">Git</span>
+                                    <span class="tech-badge">Docker</span>
+                                    <span class="tech-badge">Ubuntu</span>
+                                    <span class="tech-badge">VPS</span>
+                                    <span class="tech-badge">AWS</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Data Science & ML -->
+                            <div class="tech-category mb-4">
+                                <h5 class="text-light mb-3">
+                                    <i class="bi bi-bar-chart me-2 text-warning"></i>Data Science & ML
+                                </h5>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Machine Learning</span>
+                                    <span class="tech-badge">Pandas</span>
+                                    <span class="tech-badge">Matplotlib</span>
+                                    <span class="tech-badge">Power BI</span>
+                                    <span class="tech-badge">NumPy</span>
+                                    <span class="tech-badge">Scikit-learn</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Key Highlights -->
+                        <div class="highlights-section mb-5">
+                            <h4 class="text-warning mb-4">✨ What I Bring to the Table</h4>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="highlight-card">
+                                        <i class="bi bi-rocket-takeoff fs-2 text-warning mb-3"></i>
+                                        <h5 class="text-light">Fast Performance</h5>
+                                        <p class="text-light">Optimized code for lightning-fast load times</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="highlight-card">
+                                        <i class="bi bi-phone fs-2 text-warning mb-3"></i>
+                                        <h5 class="text-light">Responsive Design</h5>
+                                        <p class="text-light">Perfect on all devices - mobile, tablet, desktop</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="highlight-card">
+                                        <i class="bi bi-shield-check fs-2 text-warning mb-3"></i>
+                                        <h5 class="text-light">Clean Code</h5>
+                                        <p class="text-light">Well-structured, maintainable, and scalable code</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Resume Dropdown -->
+                        <div class="resume-section">
+                            <div class="dropdown">
+                                <button class="btn btn-warning dropdown-toggle resume-btn" type="button" id="resumeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-file-earmark-pdf me-2"></i> Download Resume
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="resumeDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="Tejas-Chaudhari-Business-Analyst-Resume.pdf" download="Tejas-Choudhari-Business-Analytics-Resume.pdf">
+                                            <i class="bi bi-graph-up me-2"></i> Business Analyst Version
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Tejas Choudhari Full Stack Resume.pdf" download="Tejas-Choudhari-Full-Stack-Resume.pdf">
+                                            <i class="bi bi-code-square me-2"></i> Full Stack Version
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" download="Tejas-Choudhari-Data-Science-Resume.pdf">
+                                            <i class="bi bi-cpu me-2"></i> Data Science Version
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <small class="d-block mt-2 text-light">
+                                <i class="bi bi-file-pdf me-1"></i> PDF Format
+                            </small>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+</div>
 
 
     <div class="main">
@@ -136,9 +249,9 @@
             <div class="row mb-4 project-card g-0">
                 <div class="col-md-6 d-flex align-items-center p-3">
                     <div class="project-content">
-                        <h4 class="fw-bold text-light">Dairy website</h4>
+                        <h4 class="fw-bold text-light">Housiefy Real Estate Website</h4>
                         <p class="text-light">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
-                        <a href="https://github.com/TejasChoudhari4245/Dairy-product-website"><button class="btn btn-outline-light btn-sm">View Project</button></a>
+                        <a href="https://housiefy.in/"><button class="btn btn-outline-light btn-sm">View Project</button></a>
                     </div>
                 </div>
                 <div class="col-md-6 project-image-container p-0">
