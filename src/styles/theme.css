@@ -1,0 +1,226 @@
+/* ============================================================
+   THEME LAYER - LIGHT
+   Loaded after bootstrap and after style.css. style.css owns
+   layout; this file owns the palette, the type pairing, and the
+   contrast corrections the palette forced.
+
+   Palette, repurposed for light
+     Off-white      #FAFAF8  page background
+     Space Cadet    #25344F  headings and primary text
+     Slate Gray     #617891  body text (deepened, see below), borders
+     Caput Mortuum  #632024  CTA fills, white label
+     Coffee         #6F4D38  secondary accent, hover, dividers
+     Tan            #D5B893  6-10% washes and hover fills, never text
+
+   Contrast
+     - Slate Gray #617891 measures 4.36:1 on #FAFAF8, under the 4.5
+       AA floor, and 4.12:1 on a Tan-washed card. Body copy uses
+       #5B7187 instead: same hue, 4.83:1 and 4.56:1. Slate Gray
+       proper is kept for borders and dividers, which are not text.
+     - Tan is 1.81:1 on off-white. It never carries text and never
+       sits behind text as a solid.
+     - A Caput button flips its label to Space Cadet on Tan hover.
+       Keeping white there would be 1.89:1.
+   ============================================================ */
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.hero-title,
+.section-title,
+.name,
+.btn {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+body,
+p, li, input, textarea, label, small {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ---------- Bootstrap token remap ---------- */
+:root {
+  --bs-body-bg: #FAFAF8;
+  --bs-body-color: var(--text-body);
+  --bs-dark: #25344F;
+  --bs-dark-rgb: 37, 52, 79;
+  --bs-light: #FAFAF8;
+  --bs-light-rgb: 250, 250, 248;
+  --bs-warning: var(--caput-mortuum);
+  --bs-warning-rgb: 99, 32, 36;
+  --bs-border-color: var(--border-muted);
+}
+
+/* ---------- Bootstrap utilities ---------- */
+/* The markup was written for a dark theme, so .text-light marks body
+   copy and .bg-dark marks page sections. Both now resolve to light. */
+.text-light { color: var(--text-body) !important; }
+
+h1.text-light, h2.text-light, h3.text-light,
+h4.text-light, h5.text-light, h6.text-light,
+.lead.text-light {
+  color: var(--space-cadet) !important;
+}
+
+.text-dark { color: var(--space-cadet) !important; }
+
+/* Accent text is Coffee, not Caput. Caput is reserved for the one
+   CTA per section so it keeps its weight. */
+.text-warning { color: var(--coffee) !important; }
+
+/* Sections that used .bg-dark drop to the page background. Buttons are
+   excluded: .bg-dark carries !important, and it would otherwise strip the
+   fill off the hero CTA. */
+.bg-dark:not(.btn) { background-color: transparent !important; }
+.bg-warning { background-color: var(--caput-mortuum) !important; }
+
+/* ---------- Buttons ---------- */
+/* Caput solid, white label, Tan on hover with the label flipped. */
+.btn-warning,
+.btn-dark,
+.resume-section .resume-btn,
+.contact-form .submit-btn,
+.hero .hero-buttons .btn.bg-dark {
+  background: var(--caput-mortuum) !important;
+  background-image: none;
+  border: 1px solid var(--caput-mortuum);
+  color: #FFFFFF !important;
+}
+
+.btn-warning:hover,
+.btn-warning:focus-visible,
+.btn-dark:hover,
+.btn-dark:focus-visible,
+.resume-section .resume-btn:hover,
+.contact-form .submit-btn:hover,
+.hero .hero-buttons .btn.bg-dark:hover {
+  background: var(--tan) !important;
+  background-image: none;
+  border-color: var(--tan);
+  color: var(--space-cadet) !important;
+}
+
+.contact-form .submit-btn:disabled {
+  background: var(--slate-gray);
+  border-color: var(--slate-gray);
+  color: #FFFFFF;
+  cursor: not-allowed;
+}
+
+/* Secondary buttons: Coffee outline, Coffee fill on hover. */
+.btn-outline-light,
+.hero .hero-buttons .btn-outline-light {
+  color: var(--coffee) !important;
+  border: 2px solid var(--coffee);
+  background: transparent;
+}
+
+.btn-outline-light:hover,
+.hero .hero-buttons .btn-outline-light:hover {
+  background: var(--coffee) !important;
+  background-image: none;
+  border-color: var(--coffee);
+  color: #FFFFFF !important;
+}
+
+/* The hero role badge is the one Caput accent in that section. */
+.hero .name {
+  background: var(--caput-mortuum);
+  background-image: none;
+  color: #FFFFFF;
+  box-shadow: 0 5px 18px rgba(99, 32, 36, 0.20);
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+  border-bottom: 1px solid var(--border-muted);
+  box-shadow: 0 2px 20px rgba(37, 52, 79, 0.05);
+}
+
+.navbar .navbar-brand { color: var(--space-cadet); }
+.navbar .nav-link { color: var(--text-body); }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: var(--caput-mortuum); }
+
+.navbar-toggler {
+  border-color: var(--border-strong);
+}
+
+/* ---------- Surfaces ---------- */
+/* Tan appears as a wash, not a block. */
+.services .card,
+.tech-item,
+.highlight-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-muted);
+}
+
+.services .card:hover,
+.tech-item:hover,
+.highlight-card:hover {
+  border-color: var(--coffee);
+  box-shadow: 0 20px 40px rgba(37, 52, 79, 0.10);
+}
+
+/* Coffee as a section divider rather than a filled band. */
+.contact-section,
+#projects {
+  border-top: 1px solid var(--border-muted);
+}
+
+.tech-badge {
+  background: var(--card-bg-strong);
+  border: 1px solid var(--border-muted);
+  color: var(--space-cadet);
+}
+
+.tech-badge:hover {
+  background: var(--tan);
+  color: var(--space-cadet);
+}
+
+/* ---------- Forms ---------- */
+.form-group input,
+.form-group textarea {
+  background: #FFFFFF;
+  border: 1px solid var(--border-strong);
+  color: var(--space-cadet);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--coffee);
+  outline: none;
+}
+
+.form-group label {
+  color: var(--text-body) !important;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label {
+  color: var(--coffee) !important;
+}
+
+/* ---------- Footer / icons ---------- */
+.social-icon i {
+  color: var(--space-cadet) !important;
+}
+
+.social-icon:hover i {
+  color: var(--caput-mortuum) !important;
+}
+
+.icon-box i { color: #FFFFFF; }
+
+/* Visible keyboard focus. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--caput-mortuum);
+  outline-offset: 3px;
+}

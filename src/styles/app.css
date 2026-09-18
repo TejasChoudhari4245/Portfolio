@@ -1,0 +1,11 @@
+/* App-level behaviour that used to live in script.js. Native smooth scrolling
+   replaces the old click-intercepting anchor handler. */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

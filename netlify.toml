@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Old static page kept working for anyone with the link or an old search result
+[[redirects]]
+  from = "/it-services.html"
+  to = "/services"
+  status = 301
+
+# Single-page app fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
